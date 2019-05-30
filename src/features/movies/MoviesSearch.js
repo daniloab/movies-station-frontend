@@ -38,13 +38,17 @@ const MoviesSearch = (props) => {
         setQuery(term)
         let req = await moviesSearch(term, page)
 
-        if (req.length < 0) {
+        if (req.length <= 0) {
             setHasMore(false)
             setIsFetching(false)
             return (
-                <Container>
-                    <p>Nothing found for {term}</p>
-                </Container>
+                <>
+                    <Container>
+                        <SubtitlePage>
+                            <p>Nothing found for {term}</p>
+                        </SubtitlePage>
+                    </Container>
+                </>
             )
         }
 
