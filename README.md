@@ -5,7 +5,7 @@ Web app to search movies and see details about them. See the web app [here](http
 ## Getting Started
 ```
 # clone repo
-$ https://github.com/daniloab/rest-movies-frontend.git
+$ https://github.com/daniloab/movies-station-frontend.git
 $ cd rest-movies-frontend
 
 # install dependencies
